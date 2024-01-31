@@ -1,0 +1,250 @@
+*{
+   padding:0px;
+   margin:0px;
+   box-sizing:border-box;
+}
+
+body{
+    background: url('imagens/fundo.jpg');    
+    height: 100vh;
+    font-family: Helvetica,sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;    
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    border-bottom: 1px solid white;
+}
+
+header button {   
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-size: 2em;    
+    background-color: transparent;
+}
+
+.divFotos {
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;    
+    flex-direction: column;    
+}
+
+.divFotos > p {
+    color: white;
+}
+
+.divFotos > hr {
+    width: 350px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 3px solid paleturquoise;
+    border-radius:5px;
+}
+
+.divFotos > .gridFt img {
+    width: 180px;
+    height: 220px;    
+    border-bottom: 5px solid lightblue;
+    border-radius: 10px;
+}
+
+#ciclope {
+    background-image: linear-gradient(200deg,gold,#544200);
+}
+
+#ciclope:hover {
+    box-shadow: 0px 0px 15px 10px #f8ff00;
+}
+
+#jeanGrey {
+    background-image: linear-gradient(200deg,green,#002d08);
+}
+
+#jeanGrey:hover{
+    box-shadow: 0px 0px 15px 10px green;
+}
+
+#kitty {
+    background-image: linear-gradient(200deg,#f82bff,#4e0d50);
+}
+
+#kitty:hover {
+    box-shadow: 0px 0px 15px 10px plum;
+}
+
+#tempestade {
+    background-image: linear-gradient(200deg,#240b83,#240b83);
+}
+
+#tempestade:hover {
+    box-shadow: 0px 0px 15px 10px navy;
+}
+
+#vampira {
+    background-image: linear-gradient(200deg,#b5ffaa,#2f7035);
+}
+
+#vampira:hover {
+    box-shadow: 0px 0px 15px 10px lightgreen;
+}
+
+#wolverine {
+    background-image: linear-gradient(200deg,navy,#0003fd);
+}
+
+#wolverine:hover {
+    box-shadow: 0px 0px 15px 10px blue;
+}
+
+#noturno {
+    background-image: linear-gradient(200deg,#650004,#890006);
+}
+
+#noturno:hover {
+    box-shadow: 0px 0px 15px 10px #930600;
+}
+
+#magneto {
+    background-image: linear-gradient(200deg,purple,#7a00ff);
+}
+
+#magneto:hover {
+    box-shadow: 0px 0px 15px 10px #7c0080;
+}
+
+.gridFt{
+    display: grid;
+    margin-top: 10px;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 10px;
+}
+
+.infos {
+    display: flex;
+    flex-direction:column;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid cornflowerblue;
+}
+
+.infos img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.infos hr {
+    width: 350px;        
+    border: 3px solid paleturquoise;
+    border-radius:5px; 
+    margin-bottom: 15px;
+    
+}
+
+.infos h2 {
+    letter-spacing: 5px;
+}
+
+.infos p {
+    width: 70%;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:340px){
+   .gridFt {
+      grid-template-columns: 1fr;
+   }
+   .divFotos > hr, .infos hr{
+    width:250px;
+   }
+}
+
+@media screen and (max-width:375px){
+   .divFotos >  .gridFt img {
+       width: 170px;
+   }
+}
+
+@media screen and (min-width:767px){
+   .divFotos {
+       align-items: flex-start;
+       border: none;
+       margin-right: 10px;
+   }
+   .infos {
+       border: none;              
+   }
+   main{
+       display: flex;
+       margin-left: 20px;
+       flex-direction: row;
+   }
+}
+
+@media screen and (min-width:1023px){
+   .divFotos {
+       align-items: flex-start;
+       border: none;
+       margin-right: 20px;
+   }
+   .infos {
+       border: none;              
+   }
+   .gridFt {
+       grid-template-columns: repeat(3,1fr);
+   }
+   main{
+       display: flex;
+       flex-direction: row;
+       margin-left: 50px;
+   }
+   .divFotos > .gridFt img {
+    width: 150px;    
+    }
+}
+
+@media screen and (min-width:1139px){
+   .divFotos {
+       align-items: flex-start;
+       border: none;
+       margin-right: 20px;
+   }
+   .infos {
+       border: none;              
+   }
+   .gridFt {
+       grid-template-columns: repeat(4,1fr);
+   }
+   main{
+       display: flex;
+       margin-left: 50px;
+       flex-direction: row;
+   }
+   .divFotos > .gridFt img {
+    width: 150px;    
+    }
+    body {
+        height: 60em;
+    }
+}
+
+#hi {
+    display: none;
+}

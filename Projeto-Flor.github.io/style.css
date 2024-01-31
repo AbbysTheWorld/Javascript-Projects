@@ -1,0 +1,248 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #99fb92ae;
+}
+
+header {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;    
+    color: #40693d;
+}
+
+ul {
+   list-style-type: none;
+}
+
+li {
+    padding: 10px;
+    background-color: mediumaquamarine;
+    margin: 10px;
+    border-radius: 10px;    
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    margin-top: 40px;   
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+
+.divYo {    
+    display: flex;
+    justify-content: flex-end;    
+    width: 100%;    
+}
+
+a, .yo {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: fixed;
+    top: 500px;
+    margin-right: 40px;
+   }
+
+main img {
+    width: 330px;
+    height: 200px;
+    box-shadow: 5px 0px 15px  #548a51;
+}
+
+main .spans {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+main #msg3 {
+    color:gold;
+    text-shadow: 5px 5px 10px yellow;
+}
+
+main .ani {
+     color:#ffdc0088;
+     animation: cor 2s ease-out infinite;    
+}
+
+@keyframes cor {
+    0% {color: gold;}
+    100% {color: goldenrod;}
+}
+
+/* parte span */
+
+.purple {color: purple;}
+.blue {color: paleturquoise;}
+.pink {color: pink;}
+.yellow {color:goldenrod;}
+
+/* --- */
+
+main .btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.btns button {
+    margin: 10px 0px 10px 0px;
+    width: 15em;
+    height: 3em;
+    background-color: mediumspringgreen;
+    color: white;
+    border-radius: 10px;  
+    box-shadow: 3px 3px 5px green;  
+    border: none;
+    transition: 0.3s;
+}
+
+.btns button:hover {
+    width: 17em;
+    height: 4em;
+    opacity: 0.7;
+}
+
+.btns #btn_matar {
+    background-color: #ff0a00df;
+    color: #3f0300;
+}
+
+.btns #btn_carinho {
+    background-color: plum;
+    color: #926e92;
+}
+
+#reviver {
+    background-color: yellow;
+    color: orangered;
+}
+
+#msg {
+    color: green;
+    letter-spacing: 7px;
+    margin-bottom: 15px;
+    animation: cor02  1s ease infinite;
+}
+
+#msg2 {
+    letter-spacing: 7px;
+    margin: 5px;
+    animation: cor03  0.5s ease infinite;
+}
+
+@keyframes cor02 {
+    0% {color: green;}
+    100% {color: #eeff40;}
+}
+
+@keyframes cor03 {
+    0% {color: black;}
+    100% {color: white;}
+}
+
+span.oi {
+    color: blue;
+    animation: ponto 1s normal infinite;
+    width: 0px; 
+}
+
+@keyframes ponto {
+    from {font-size: 0px;}
+    to {font-size:  30px;}
+}
+
+/* Media queries */
+
+@media only screen and (min-width:767px){
+    
+        header h1 {
+            font-size: 4em;            
+        }
+        header ul li {
+            padding: 20px;
+            width: 300px;
+        }       
+        main img {
+            width: 430px;
+            height: 300px;
+        }
+        main .spans {
+            font-size: 3em;
+        }
+        main .btns button {
+            width: 19em;
+            height: 4.3em;
+        }
+       .caixa {
+           margin-bottom: 200px;
+       }
+}
+
+/* CAIXA */
+
+.caixa {
+    width: 80%;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    height: 300px;
+    background: lightblue;    
+    bottom: 500px;    
+}
+
+.caixa .btn_X {
+    height: 40px;   
+    background-color: maroon;       
+    color: white; 
+    border-radius: 50%;
+    margin: 10px;
+    border: none;
+    width: 40px;
+}
+
+.caixaDiv{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    background-color: lightcyan;    
+    width: 100%;   
+    height: 100%;  
+}
+ 
+
+.caixaDiv h2{
+    color: tomato;
+    font-size: 1.5em;    
+    margin-bottom: 15px;
+}
+
+.caixaDiv #txt{
+    padding: 10px;
+    background-color: lightgray;    
+    border-radius: 10px;    
+    border: 1px solid black;    
+    outline: none;
+    font-size: 1em;
+}
+
+.caixaDiv .btn_send {
+    padding: 20px;
+    width: 140px;
+    margin-top: 15px;    
+    border: none;
+    border-radius: 20px;    
+    background-color: lightskyblue;
+}

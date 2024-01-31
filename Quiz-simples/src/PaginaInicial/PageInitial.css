@@ -1,0 +1,43 @@
+.page-start-body{
+    background-color: #18126b;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.page-start-content{
+    background-color: rgba(21, 70, 143, 0.813);
+    padding: 1em;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    gap: 2em;
+    text-align: center;
+    color: whitesmoke;
+    width: 25em;
+    border: 1px solid plum;
+    box-shadow: 5px 5px 5em plum;
+}
+
+.page-start-content h1{
+    color:plum;
+    text-shadow: 0px 0px 25px rgb(255, 255, 255);
+}
+
+.page-start-content button{
+    padding: 0.3em 2em;
+    font-size: 1.7em;
+    background-color:rgb(135, 75, 156);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.4s;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.page-start-content button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    border: 1px solid plum;
+}

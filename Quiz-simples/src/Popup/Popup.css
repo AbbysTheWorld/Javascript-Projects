@@ -1,0 +1,46 @@
+.popup-body{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(166, 166, 166, 0.527);
+    backdrop-filter: blur(3px);
+    display: grid;
+    place-items: center;
+}
+
+.popup-content{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    border-radius: 10px;
+    max-width: 40em;
+}
+
+.popup-content h1{
+    margin-top: 0.4em;
+}
+
+.popup-content p{
+    content: "X";
+    color:red;
+    position: absolute;
+    right: 10px;
+    top:0px;
+    font-size: 1.5em;
+}
+
+.popup-content p:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.popup-content span{
+    font-weight: bolder;
+    color: red;
+    margin-top: 5em;
+    margin: 1em;
+}
