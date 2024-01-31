@@ -1,0 +1,49 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.774);
+    padding: 5px;
+    width: 100%;
+}
+
+nav .divPhotoUser img{
+    width: 150px;
+}
+
+nav .divTitle h1{
+    color:red;
+    font-size: 2em;
+   
+}
+
+nav .divLinks{
+    display: flex;
+    flex-direction: column;
+}
+
+nav .divLinks a{
+    text-decoration: none;
+    color:red;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+nav .divLinks a:nth-child(1), nav .divLinks a:nth-child(2){
+    margin-bottom: 0.5em;
+}
+
+nav .divLinks a:hover{
+    opacity: 0.4;
+}
+
+@media screen and (max-width:444px) {
+  nav{
+    flex-direction: column;
+  }
+  nav .divTitle h1{
+    margin: 0;
+  }
+}
